@@ -103,9 +103,21 @@ button{
     background: linear-gradient(to right, deeppink, salmon);
     border-radius: 6px;
     cursor: pointer;
+    transition: width 0.3s linear;
 }
 
 button img{
     width: 30px;
     display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
